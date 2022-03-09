@@ -11,7 +11,6 @@ provider "aws" {
 
 resource "aws_s3_bucket" "bucket1" {
   bucket = var.bucket
-  acl = "private"
   website {
       index_document = "index.html"
   }
