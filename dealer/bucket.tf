@@ -11,9 +11,7 @@ provider "aws" {
 
 resource "aws_s3_bucket" "bucket1" {
   bucket = var.bucket
-  website = {
-      index_document = "index.html"
-  }
+  
 }
 
 /*------------content------------*/
